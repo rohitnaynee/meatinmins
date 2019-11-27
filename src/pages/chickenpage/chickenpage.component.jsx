@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ChickenDirectory from '../components/directory/chicken-directory.component'
+import ChickenDirectory from '../../components/directory/chicken-directory.component'
 
 import './chickenpage.styles.scss';
 
