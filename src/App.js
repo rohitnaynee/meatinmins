@@ -6,6 +6,7 @@ import './App.css';
 import HomePage from './pages/homepage/homepage.component';
 import ChickenPage from './pages/chickenpage/chickenpage.component';
 import ShopPage from './pages/shop/shop.component';
+import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import Header from './components/header/header.component';
 
 const Mutton = () => (
@@ -44,6 +45,7 @@ function App() {
         <Route exact path = '/seafood' component = {SeaFood} />
         <Route exact path = '/exotic' component = {Exotic} />
         <Route exact path = '/eggs' component = {Eggs} />
+        <Route exact path = '/signin' component = {SignInAndSignUpPage} />
         </Switch>    
     </div>
   );
