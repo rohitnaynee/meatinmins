@@ -21,4 +21,17 @@
     button {
         margin-top: auto;
     }
+
+    .custom-button{
+        
+        background-color: salmon;
+        border: 1px solid white;
+
+        &:hover{
+            background-color: white;
+            color: salmon;
+            opacity: 0.8;
+        }
+        
+    }
 }
