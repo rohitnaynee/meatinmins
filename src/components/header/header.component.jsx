@@ -7,6 +7,8 @@ import { auth } from '../../firebase/firebase.utils';
 
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
+import ContactPage from '../../pages/contact-us/contact-us.component';
+
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import { selectCurrentUser } from '../../redux/user/user.selectors';
 
@@ -24,8 +26,11 @@ const Header = ({ currentUser, hidden }) => (
            SHOP
         </Link>
 
-        <Link className = 'option' to = '/shop' >
-           CONTACT
+        <Link className = 'option' to = '/contact' >
+           <div>
+             CONTACT
+           </div>
+
         </Link>
 
         <Link className = 'option' to = '/shop' >

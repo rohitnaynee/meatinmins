@@ -1,0 +1,52 @@
+.contact-us {
+    background-color: salmon;
+    width: 100%;
+    padding: 22px;
+    border: 2px solid black;
+    border-radius: 7px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    
+   .input-field {
+       display: flex;
+       width: 50%;
+       height: 40px;
+   }
+
+   .input-field1 {
+    display: flex;
+    width: 90%;
+    height: 150px;
+    box-sizing: border-box;
+    flex-direction: column;
+    
+}
+
+
+   
+
+    .form {
+        flex-direction: column;
+        width: 800px;
+        height: 400px
+    }
+
+    .button {
+   display: flex;
+   width: 200px;
+   
+   background-color: lemonchiffon;
+   color:salmon;
+   font-size: 20px;
+   margin: 20px;
+   cursor: pointer;
+   height: 60px;
+   justify-content: center;
+   }
+}
+
+
+

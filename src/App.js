@@ -10,6 +10,7 @@ import ChickenPage from './pages/chickenpage/chickenpage.component';
 import ShopPage from './pages/shop/shop.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import CheckoutPage from './pages/checkout/checkout.component';
+import ContactPage from './pages/contact-us/contact-us.component';
 
 import Header from './components/header/header.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
@@ -33,6 +34,7 @@ const Exotic = () => (
     exotic related items
   </div>
 );
+
 
 const Eggs = () => (
   <div>
@@ -80,6 +82,8 @@ class App extends React.Component {
         <Route exact path = '/exotic' component = {Exotic} />
         <Route exact path = '/eggs' component = {Eggs} />
         <Route exact path = '/checkout' component = {CheckoutPage} />
+        <Route exact path = '/contact' component = {ContactPage} />
+        
         <Route exact path = '/signin' 
              render = {() => this.props.currentUser 
               ? 
