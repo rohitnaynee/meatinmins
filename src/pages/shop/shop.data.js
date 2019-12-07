@@ -203,7 +203,7 @@ const SHOP_DATA = [
     },
     {
       id: 5,
-      title: 'Cold-cuts',
+      title: 'eggs',
       routeName: 'mens',
       items: [
         {
