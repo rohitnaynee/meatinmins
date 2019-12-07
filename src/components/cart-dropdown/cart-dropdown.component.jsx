@@ -18,7 +18,7 @@ const CartDropdown = ({ cartItems, history, dispatch }) => (
            <CartItem key = {cartItem.id} item = {cartItem} />
           ))
        ) : (
-         <span className='empty-message'><h2>"CHICKEN"</h2> <h3>the reason you are not vegetarian</h3></span>
+         <span className='empty-message'><h2>"CHICKEN"</h2> <h3>the reason you are still not vegetarian</h3></span>
        )}
       </div>
       <CustomButton onClick = {() => {

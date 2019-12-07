@@ -7,7 +7,7 @@ import { auth } from '../../firebase/firebase.utils';
 
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
-import ContactPage from '../../pages/contact-us/contact-us.component';
+
 
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import { selectCurrentUser } from '../../redux/user/user.selectors';
@@ -19,8 +19,14 @@ import './header.styles.scss';
 const Header = ({ currentUser, hidden }) => (
     <div className = 'header' >
       <Link className = 'logo-container' to = "/" >
-        <Logo className = 'logo' />
+        <Logo className = 'logo' />        
       </Link>
+   
+      <div className = 'company-name' >
+         <h2>meat in mins</h2>
+      </div>
+      
+
       <div className = 'options' >
         <Link className = 'option' to = '/shop' >
            SHOP
@@ -33,11 +39,11 @@ const Header = ({ currentUser, hidden }) => (
 
         </Link>
 
-        <Link className = 'option' to = '/shop' >
+        <Link className = 'option' to = '/aboutus' >
            ABOUT US 
         </Link>
 
-        <Link className = 'option' to = '/shop' >
+        <Link className = 'option' to = '/hiring' >
            WE ARE HIRING
         </Link>
         {
