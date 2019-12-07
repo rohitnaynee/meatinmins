@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+
 import { clearItemFromCart, addItem, removeItem } from '../../redux/cart/cart.actions';
 
 import './checkout-item.styles.scss';
@@ -21,7 +22,10 @@ const CheckOutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
         <span className = 'price' >{price}</span>
         <div className = 'remove-button' onClick = {() => clearItem(cartItem)} > &#10007; </div>
        
+        
     </div>
+    
+    
 )};
 
 const mapDispatchToProps = dispatch => ({
