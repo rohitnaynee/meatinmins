@@ -12,12 +12,12 @@ const StripeCheckoutButton = ({ price }) => {
 
     return (
         <StripeCheckout 
-         label = 'Pay Now'
+         label = 'Pay Now Online'
          name = 'MEAT IN MINS Ltd'
          billingAddress
          shippingAddress
          image ='/images/chicken-logo.png'
-         description = {`Your total is ₹{price}`}
+         description = {`Your total is ₹${price}`}
          amount = {priceForStripe}
          panelLabel = 'Pay Now'
          token = {onToken}

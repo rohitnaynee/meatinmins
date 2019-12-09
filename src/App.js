@@ -12,37 +12,17 @@ import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up
 import CheckoutPage from './pages/checkout/checkout.component';
 import ContactPage from './pages/contact-us/contact-us.component';
 import AboutUsPage from './pages/about-us/about-us.component';
-import HiringPage from './pages/hiring/hiring.component'
+import HiringPage from './pages/hiring/hiring.component';
+import Mutton from './components/mutton/mutton.component';
+import SeaFood from './components/sea-food/sea-food.component';
+import Exotic from './components/exotic/exotic.component';
+import ColdCuts from './components/cold-cuts/cold-cuts.component';  
+import Eggs from './components/eggs/eggs.component';
 
 import Header from './components/header/header.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors';
-
-const Mutton = () => (
-  <div>
-    mutton related items
-  </div>
-);
-
-const SeaFood = () => (
-  <div>
-    seafood related items
-  </div>
-);
-
-const Exotic = () => (
-  <div>
-    exotic related items
-  </div>
-);
-
-
-const Eggs = () => (
-  <div>
-    eegs related items
-  </div>
-);
 
 class App extends React.Component {
 
@@ -82,6 +62,7 @@ class App extends React.Component {
         <Route exact path = '/mutton' component = {Mutton} />
         <Route exact path = '/seafood' component = {SeaFood} />
         <Route exact path = '/exotic' component = {Exotic} />
+        <Route exact path = '/coldcuts' component = {ColdCuts} />
         <Route exact path = '/eggs' component = {Eggs} />
         <Route exact path = '/checkout' component = {CheckoutPage} />
         <Route exact path = '/contact' component = {ContactPage} />
