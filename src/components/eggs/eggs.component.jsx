@@ -11,7 +11,7 @@ const Eggs = () => (
       </h1>
       <h3>
        Call 9000000761  to order eggs<br/>
-       thanx in advance..
+       thanks in advance..
       </h3>
     </div>
 );

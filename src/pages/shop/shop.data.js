@@ -8,7 +8,7 @@ const SHOP_DATA = [
           id: 1,
           name: 'Chicken 1kg',
           imageUrl: 'images/chicken-breast.png',
-          price: 150
+          price: 200
         },
         {
           id: 2,
